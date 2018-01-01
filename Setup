@@ -1,0 +1,20 @@
+# Step 
+
+1. MaskDB.Database.sql: Create New DB (MaskDB) in the same server where masking is required
+2. Step1-OleAutomationEnable.sql : Enable - OleAutomation 
+3. Create procedures, functions and tables (SQL File in the project)
+4. Insert list of tables and columns in the rTableList
+
+USE [MaskDB]
+GO
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'FirstName', N'MaskDB.dbo.Person', N'FirstName', N'Done', CAST(N'2018-01-01 11:24:33.347' AS DateTime))
+GO
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'FirstName', N'MaskDB.dbo.Person', N'FirstName', N'Done', CAST(N'2018-01-01 11:24:33.373' AS DateTime))
+GO
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'FirstName', N'MaskDB.dbo.Person', N'FirstName', N'Done', CAST(N'2018-01-01 11:24:33.387' AS DateTime))
+GO
+
+5. Execute rMaskTableInd
+
+
+
