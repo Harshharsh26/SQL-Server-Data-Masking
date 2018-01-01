@@ -7,11 +7,11 @@
 
 USE [MaskDB]
 GO
-INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'FirstName', N'MaskDB.dbo.Person', N'FirstName', N'Done', CAST(N'2018-01-01 11:24:33.347' AS DateTime))
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'FirstName', N'MaskDB.dbo.Person', N'FirstName', N'Pending', CAST(N'2018-01-01 11:24:33.347' AS DateTime))
 GO
-INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'MiddleName', N'MaskDB.dbo.Person', N'MiddleName', N'Done', CAST(N'2018-01-01 11:24:33.373' AS DateTime))
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'MiddleName', N'MaskDB.dbo.Person', N'MiddleName', N'Pending', CAST(N'2018-01-01 11:24:33.373' AS DateTime))
 GO
-INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'LastName', N'MaskDB.dbo.Person', N'LastName', N'Done', CAST(N'2018-01-01 11:24:33.387' AS DateTime))
+INSERT [dbo].[rTableList] ([srcDBSchemaTable], [srcColumn], [tgtDBSchemaTable], [tgtColumn], [Status], [ModifiedDt]) VALUES (N'AdventureWorks2012.Person.Person', N'LastName', N'MaskDB.dbo.Person', N'LastName', N'Pending', CAST(N'2018-01-01 11:24:33.387' AS DateTime))
 GO
 
 5. Execute rMaskTableInd
